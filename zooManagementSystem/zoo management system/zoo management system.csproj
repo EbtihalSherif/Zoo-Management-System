@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{266A1DF8-81B1-4946-BB27-E14A94F27D86}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>zoo_management_system</RootNamespace>
+    <AssemblyName>zoo management system</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddEvent_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddEvent_usercontrol.Designer.cs">
+      <DependentUpon>AddEvent_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_form.Designer.cs">
+      <DependentUpon>Admin_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin_login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin_login_form.Designer.cs">
+      <DependentUpon>Admin_login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Animal.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Animal.Designer.cs">
+      <DependentUpon>Animal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="bookingTicket_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="bookingTicket_usercontrol.Designer.cs">
+      <DependentUpon>bookingTicket_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DayShift_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DayShift_usercontrol.Designer.cs">
+      <DependentUpon>DayShift_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditDataBase%28Staff%29_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EditDataBase%28Staff%29_usercontrol.Designer.cs">
+      <DependentUpon>EditDataBase%28Staff%29_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Events_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Events_usercontrol.Designer.cs">
+      <DependentUpon>Events_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Explore_The_zoo_userControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Explore_The_zoo_userControl.Designer.cs">
+      <DependentUpon>Explore_The_zoo_userControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback_read_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Feedback_read_usercontrol.Designer.cs">
+      <DependentUpon>Feedback_read_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Feedback_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Feedback_usercontrol.Designer.cs">
+      <DependentUpon>Feedback_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JungleHome_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JungleHome_form.Designer.cs">
+      <DependentUpon>JungleHome_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LogIn_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LogIn_form.Designer.cs">
+      <DependentUpon>LogIn_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ManagingSystem_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManagingSystem_usercontrol.Designer.cs">
+      <DependentUpon>ManagingSystem_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SalaryPerMonth_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SalaryPerMonth_usercontrol.Designer.cs">
+      <DependentUpon>SalaryPerMonth_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Show_info_Admin_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Show_info_Admin_usercontrol.Designer.cs">
+      <DependentUpon>Show_info_Admin_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SignUp_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SignUp_form.Designer.cs">
+      <DependentUpon>SignUp_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_Form.Designer.cs">
+      <DependentUpon>Staff_Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_login_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Staff_login_form.Designer.cs">
+      <DependentUpon>Staff_login_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Staff_Profile_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Staff_Profile_usercontrol.Designer.cs">
+      <DependentUpon>Staff_Profile_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Visitor_Profile_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Visitor_Profile_usercontrol.Designer.cs">
+      <DependentUpon>Visitor_Profile_usercontrol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Welcome_form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Welcome_form.Designer.cs">
+      <DependentUpon>Welcome_form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkingHours_usercontrol.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WorkingHours_usercontrol.Designer.cs">
+      <DependentUpon>WorkingHours_usercontrol.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddEvent_usercontrol.resx">
+      <DependentUpon>AddEvent_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_form.resx">
+      <DependentUpon>Admin_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin_login_form.resx">
+      <DependentUpon>Admin_login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Animal.resx">
+      <DependentUpon>Animal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="bookingTicket_usercontrol.resx">
+      <DependentUpon>bookingTicket_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DayShift_usercontrol.resx">
+      <DependentUpon>DayShift_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditDataBase%28Staff%29_usercontrol.resx">
+      <DependentUpon>EditDataBase%28Staff%29_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Events_usercontrol.resx">
+      <DependentUpon>Events_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Explore_The_zoo_userControl.resx">
+      <DependentUpon>Explore_The_zoo_userControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback_read_usercontrol.resx">
+      <DependentUpon>Feedback_read_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Feedback_usercontrol.resx">
+      <DependentUpon>Feedback_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JungleHome_form.resx">
+      <DependentUpon>JungleHome_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LogIn_form.resx">
+      <DependentUpon>LogIn_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManagingSystem_usercontrol.resx">
+      <DependentUpon>ManagingSystem_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SalaryPerMonth_usercontrol.resx">
+      <DependentUpon>SalaryPerMonth_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Show_info_Admin_usercontrol.resx">
+      <DependentUpon>Show_info_Admin_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SignUp_form.resx">
+      <DependentUpon>SignUp_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Form.resx">
+      <DependentUpon>Staff_Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_login_form.resx">
+      <DependentUpon>Staff_login_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Staff_Profile_usercontrol.resx">
+      <DependentUpon>Staff_Profile_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Visitor_Profile_usercontrol.resx">
+      <DependentUpon>Visitor_Profile_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Welcome_form.resx">
+      <DependentUpon>Welcome_form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WorkingHours_usercontrol.resx">
+      <DependentUpon>WorkingHours_usercontrol.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\header.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\jungle zoo.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Explore the zoo button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\whats new button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\animals button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\btnClose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\My Post.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Book Tickest.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\image %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Feedback_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\profile_button.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-login-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-sign-out-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-64.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-delete-48.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-shutdown-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-add-new-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-calendar-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-clock-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-customer-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-database-options-100.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8-cash-100.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
